@@ -1,0 +1,68 @@
+.animation1 {
+  animation-duration: 0.5s;
+  animation-name: slidein;
+}
+
+.animation2 {
+	animation-duration: 3s;
+	animation-name: rotateY;
+	-webkit-animation: fadein 5s linear 0s 1;
+}
+
+.info{
+margin-left:165px;
+margin-right:0px;
+padding:12px;
+background-color:black;
+display:none;
+}
+
+.hoveranime:hover .info {
+	animation-duration: 0.3s;
+	animation-name: slidein2;
+	display: block;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes rotateY {
+	0% {
+		transform: rotateY(0deg);
+		transform: fadeIn();
+	}
+	100% {
+		transform: rotateY(1080deg);
+	}
+}
+
+@-webkit-keyframes fadein {
+	0%{
+		opacity:0;
+	}
+	100% {
+		opacity:1;
+	}
+}
+
+@keyframes slidein2 {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 165px;
+    width: 100%;
+  }
+}
+
